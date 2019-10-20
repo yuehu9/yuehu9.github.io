@@ -26,6 +26,20 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	<style>
+	.column_p {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;
+	}
+	/* Clearfix (clear floats) */
+	.row_p::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+
+	}
+	</style>
   </head>
   <body>
 
@@ -38,7 +52,7 @@
 					<li ><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li class="colorlib-active"><a href="research.html">Research</a></li>
-					<li><a href="photography.html">Blog</a></li>
+					<li><a href="photography.html">Gallery</a></li>
 				</ul>
 			</nav>
 
@@ -80,7 +94,8 @@
 
 							  <p>This project is aimed at finding a method that can overcome the constraints in high volume traffic data, and identify ''extreme'' behaviors from ''regular'' behaviors. Exploiting the regular patterns can be of help, which means we can rearrange the traffic data into higher dimensions. The porpose of the project is to develop a reliable algorithm to analysis the massive city traffic data in tensor format, and give a better insight on traffic pattern and extreme event behavior.</p>
 
-							  <p style="color:black;">Founding: National Science Foundation. </p>
+							  <p style="color:black;"><strong>Founding:</strong><li>National Science Foundation. </li> </p>
+							  <p style="color:black;"><strong>Publication and Products:</strong>  <li>Y. Hu and D. Work. "Robust Tensor Recovery with Fiber Outliers for Traffic Events." submitted to  <em>ACM Transactions on Knowledge Discovery from Data (TKDD)</em>, 2019(under review). <strong>Download: </strong><a style="color:gray; text-decoration: underline "  class="btn-custom" href='https://arxiv.org/abs/1908.10198'>preprint</a>.<strong> Code: </strong><a style="color:gray; text-decoration: underline" class="btn-custom" href='https://github.com/Lab-Work/Robust_tensor_recovery_for_traffic_events'>github</a>.</li>. </p>
 
 				            </div>
 									</div>
@@ -90,11 +105,15 @@
 			    				<div class="blog-entry ftco-animate">
 
 										<div class="text text-2 pt-2 mt-3">
-				              <h3 class="mb-4"><a>Data Analytics for Array of Things (AoT)</a></h3>
 
-				              <img src="images/aot.png" class="center" alt="image of a node" style="width:50%; height: auto;">
+				              <h3 class="mb-4"><a>Automatic Data Cleaning for Urban Sensor Networks</a></h3>
+
+				               <img src="images/aot_2.png" alt="aot node and recovered map" style="width:85%; height: auto;">
+
 				              
-				              <p  class="mb-4"> <a href="https://arrayofthings.github.io/">The Array of Things (AoT) </a> is an urban sensor network project launched in the City of Chicago in 2016 to collect real time data on the city's environment and activity. With the collective efforts from the City of Chicago's government, researchers, universities and communities, more than 90 nodes have been installed to collect high-resolution climate and weather information. Although undergone careful evaluation and calibration during initial installation, anomaly data still remain unexplained, such as random errors and spikes. The main goal of this project is to pre-process raw data into a clean, error-free and complete format for further analytics. This method will be applied on 6 months of node sensor data and provide a sneak peek into the quality and reliability of the sensor equipment.</p>
+				              <p  class="mb-4"> Low cost urban sensing networks enhance our understanding of cites and urban life. IThe impacts of mitigation strategies in communities can be measured at a fine-grained scale, informing context-aware policies and infrastructure design. However, fine-grained city-scale data analysis is complicated by common, tedious data cleaning tasks such as removing outliers and imputing missing data. To address the challenge of data cleaning, this project applies robust low-rank tensor factorization method to automatically correct anomalies and impute missing entries for high-dimensional urban environmental datasets. </p>
+				              <p  class="mb-4"> The  method is applied to the <a style="color:gray; text-decoration: underline" href="https://arrayofthings.github.io/">Array of Things (AoT) </a> city-scale sensor network. Located in the City of Chicago, IL, AoT collects real time data on the city's environment and activity with more than 90 nodes. Further analysis of AoT data and its broader usages are also under way. </p>
+				              <p style="color:black;"><strong>Publication and Products:</strong>  <li>Y. Hu, Y. Wang, C. Jiao, R. Sankaran, C. E. Catlett, D. Work. "Automatic data cleaning via tensor factorization for large urban environmental sensor networks."   <em> Tackling Climate Change with Machine Learning Workshop at at NeurIPS</em>, 2019. <strong>Code: </strong><a style="color:gray; text-decoration: underline" href='https://github.com/Lab-Work/Tensor_factorization_for_urban_sensor_network'>github</a>.</li> </p>
 				            </div>
 									</div>
 			    			</div>
